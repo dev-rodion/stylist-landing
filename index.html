@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regina Buvalets — Стилист</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__logo">Regina Buvalets</div>
+    <nav class="nav__links">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#how">Как это работает</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <button class="nav__burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__sub">Персональный стилист</p>
+      <h1 class="hero__title">Твой стиль —<br /><em>твоя суперсила</em></h1>
+      <p class="hero__desc">Помогаю женщинам создать гардероб, который работает на них каждый день — без лишних вещей и стресса перед зеркалом.</p>
+      <a href="#contact" class="btn btn--primary">Хочу стильный гардероб</a>
+    </div>
+    <div class="hero__image">
+      <div class="placeholder placeholder--hero">
+        <span>Фото стилиста<br />1200 × 1400</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__photo">
+        <div class="placeholder placeholder--portrait">
+          <span>Фото<br />600 × 750</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="section__label">Обо мне</p>
+        <h2 class="section__title">Привет, я Регина</h2>
+        <p>Я сертифицированный стилист-имиджмейкер с более чем 5 годами опыта. Работаю с женщинами, которые хотят выглядеть уверенно и гармонично — в работе, в путешествиях и в повседневной жизни.</p>
+        <p>Мой подход — это не про тренды, а про тебя: твою фигуру, образ жизни и цели. Вместе мы создадим гардероб, в котором каждая вещь на своём месте.</p>
+        <div class="about__stats">
+          <div class="stat">
+            <strong>200+</strong>
+            <span>клиентов</span>
+          </div>
+          <div class="stat">
+            <strong>5 лет</strong>
+            <span>опыта</span>
+          </div>
+          <div class="stat">
+            <strong>10+</strong>
+            <span>стран шопинга</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section section--cream" id="services">
+    <div class="container">
+      <p class="section__label center">Услуги</p>
+      <h2 class="section__title center">Чем я могу помочь</h2>
+      <div class="services__grid">
+
+        <div class="card" data-aos>
+          <div class="card__icon">👗</div>
+          <h3 class="card__title">Разбор гардероба</h3>
+          <p class="card__desc">Разберём всё, что есть в шкафу: что оставить, что убрать и какие базовые вещи добавить для полноты образов.</p>
+          <div class="card__footer">
+            <span class="card__price">200 €</span>
+            <button class="btn btn--outline js-cta">Мне интересно</button>
+          </div>
+        </div>
+
+        <div class="card card--featured" data-aos>
+          <div class="card__badge">Популярно</div>
+          <div class="card__icon">✨</div>
+          <h3 class="card__title">Капсульный гардероб</h3>
+          <p class="card__desc">Создадим продуманную капсулу из вещей, которые сочетаются между собой и подходят именно тебе.</p>
+          <div class="card__footer">
+            <span class="card__price">300 €</span>
+            <button class="btn btn--primary js-cta">Мне интересно</button>
+          </div>
+        </div>
+
+        <div class="card" data-aos>
+          <div class="card__icon">🛍️</div>
+          <h3 class="card__title">Шопинг-сопровождение</h3>
+          <p class="card__desc">Пойдём вместе за покупками: подберу вещи под твой тип фигуры, бюджет и задачи — без лишних трат.</p>
+          <div class="card__footer">
+            <span class="card__price">200 €</span>
+            <button class="btn btn--outline js-cta">Мне интересно</button>
+          </div>
+        </div>
+
+        <div class="card" data-aos>
+          <div class="card__icon">✈️</div>
+          <h3 class="card__title">Капсула в путешествие</h3>
+          <p class="card__desc">Упакуем чемодан умно: минимум вещей — максимум образов. Удобно, стильно, без лишнего веса.</p>
+          <div class="card__footer">
+            <span class="card__price">100 €</span>
+            <button class="btn btn--outline js-cta">Мне интересно</button>
+          </div>
+        </div>
+
+        <div class="card" data-aos>
+          <div class="card__icon">💬</div>
+          <h3 class="card__title">Чат стиля на сезон</h3>
+          <p class="card__desc">Месяц поддержки в личном чате: отвечаю на вопросы по образам, помогаю с покупками и новыми сочетаниями.</p>
+          <div class="card__footer">
+            <span class="card__price">20 € / мес</span>
+            <button class="btn btn--outline js-cta">Мне интересно</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how section" id="how">
+    <div class="container">
+      <p class="section__label center">Процесс</p>
+      <h2 class="section__title center">Как это работает</h2>
+      <div class="how__steps">
+        <div class="step" data-aos>
+          <div class="step__num">01</div>
+          <h3 class="step__title">Знакомство</h3>
+          <p class="step__desc">Мы созваниваемся или переписываемся — я узнаю твой образ жизни, цели и пожелания.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step" data-aos>
+          <div class="step__num">02</div>
+          <h3 class="step__title">Анализ</h3>
+          <p class="step__desc">Разбираем твой текущий гардероб, определяем твой стиль, цветовой тип и силуэт.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step" data-aos>
+          <div class="step__num">03</div>
+          <h3 class="step__title">Работа</h3>
+          <p class="step__desc">Создаём образы, идём за покупками или формируем капсулу — в зависимости от выбранной услуги.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step" data-aos>
+          <div class="step__num">04</div>
+          <h3 class="step__title">Результат</h3>
+          <p class="step__desc">Ты получаешь готовые образы, список покупок и уверенность в том, что одеться — это легко.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews section section--cream" id="reviews">
+    <div class="container">
+      <p class="section__label center">Отзывы</p>
+      <h2 class="section__title center">Что говорят клиентки</h2>
+      <div class="reviews__grid">
+
+        <div class="review" data-aos>
+          <div class="review__photo">
+            <div class="placeholder placeholder--avatar"><span>Фото</span></div>
+          </div>
+          <p class="review__text">«После разбора гардероба я наконец-то понимаю, что у меня есть и как это носить. Регина очень внимательная и знает своё дело!»</p>
+          <p class="review__author">— Мария, 34 года</p>
+        </div>
+
+        <div class="review" data-aos>
+          <div class="review__photo">
+            <div class="placeholder placeholder--avatar"><span>Фото</span></div>
+          </div>
+          <p class="review__text">«Шопинг-сопровождение — лучшее вложение. Купила меньше, но всё подходит друг к другу. Больше не трачу деньги на вещи, которые потом не ношу.»</p>
+          <p class="review__author">— Анна, 29 лет</p>
+        </div>
+
+        <div class="review" data-aos>
+          <div class="review__photo">
+            <div class="placeholder placeholder--avatar"><span>Фото</span></div>
+          </div>
+          <p class="review__text">«Регина помогла собрать чемодан в путешествие — взяла 10 вещей и получила 20+ образов. Теперь только так!»</p>
+          <p class="review__author">— Светлана, 41 год</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__text">
+        <p class="section__label">Контакты</p>
+        <h2 class="section__title">Готова начать?</h2>
+        <p>Напиши мне в любой из мессенджеров — отвечу в течение дня и расскажу, с чего лучше начать именно тебе.</p>
+      </div>
+      <div class="contact__socials">
+        <a href="#" class="social-link social-link--instagram" target="_blank" rel="noopener">
+          <!-- Simple Icons: Instagram -->
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="#" class="social-link social-link--telegram" target="_blank" rel="noopener">
+          <!-- Simple Icons: Telegram -->
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          <span>Telegram</span>
+        </a>
+        <a href="#" class="social-link social-link--whatsapp" target="_blank" rel="noopener">
+          <!-- Simple Icons: WhatsApp -->
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Regina Buvalets. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
